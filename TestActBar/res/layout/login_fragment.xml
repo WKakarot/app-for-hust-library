@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+    
+<TableLayout
+    android:id="@+id/tablelayout" 
+    android:orientation="vertical"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:collapseColumns="3"
+    android:gravity="center"
+    android:layout_gravity="center"
+    >
+    <TableRow 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="10pt"
+            android:layout_gravity="center"
+            ></TextView>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:inputType="text"
+            android:text="汪杰"
+            >
+        </EditText>
+    </TableRow>
+    <TableRow 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/passwd"
+            android:textSize="10pt"
+            android:layout_gravity="center"
+            ></TextView>
+        <EditText
+            android:id="@+id/passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:inputType="textPassword"
+            android:text="0122030060191"
+            >  
+        </EditText>
+    </TableRow>    
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Button 
+            android:id="@+id/ButtonCancel"
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+        <Button 
+            android:id="@+id/ButtonLogin"
+            android:text="@string/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:layout_marginRight="3dip"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+        
+    </TableRow>
+</TableLayout>
+
+    <TextView 
+        android:id="@+id/loginres"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:gravity="center_horizontal"
+        >        
+    </TextView>       
+
+   
+</LinearLayout>

@@ -1,0 +1,48 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    
+    <!-- custom actionBar title Style -->
+    <style name="actionBarTitleStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">8pt</item>
+    </style>
+    
+    <!-- custom actionBar Style -->
+    <style name="ActionBarStyle1" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/lightred</item>
+        <item name="android:displayOptions">none</item>
+        <item name="android:titleTextStyle">@style/actionBarTitleStyle</item>
+    </style>
+    
+    <style name="ActionBarStyle2" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/lightred</item>
+        <item name="android:titleTextStyle">@style/actionBarTitleStyle</item>
+    </style>    
+    
+    <!-- custom activity Style -->
+    <style name="ActivityStyle1" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBarStyle1</item>        
+    </style>
+    
+    <style name="ActivityStyle2" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBarStyle2</item>        
+    </style>    
+    
+</resources>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <TextView 
+        android:id="@+id/hotdes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="9pt"
+        android:text="@string/dateselect"/>    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+     
+        <Spinner 
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
+    
+        <Button 
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/submit"
+            android:layout_weight="1"/>
+    
+    </LinearLayout>
+
+     <TextView 
+        android:id="@+id/tishi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="@android:color/secondary_text_light"
+        android:gravity="center_horizontal"      
+        />       
+    
+    <ListView 
+        android:id="@+id/ranklist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></ListView>
+        
+</LinearLayout>

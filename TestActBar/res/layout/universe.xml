@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <TextView
+        android:id="@+id/unititle"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="10pt"    
+        android:background="@android:color/background_dark"
+        android:textColor="@color/lightorange"
+        />
+
+     <TextView 
+        android:id="@+id/unitishi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="@android:color/secondary_text_light"
+        android:gravity="center"      
+        /> 
+
+    <ListView
+        android:id="@+id/unilist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+ 
+  
+</LinearLayout>
